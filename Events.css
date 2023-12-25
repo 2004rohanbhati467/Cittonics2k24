@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #151320;
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+    font-family: 'Poppins',sans-serif;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    margin: 50px;
+    padding: 20px;
+    grid-gap: 80px;
+}
+.card{
+    height: 500px;
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+.card1>.container:after{
+    opacity: 0.6;
+    background-image: linear-gradient(
+        135deg,
+        #433F58,
+        #0B181E
+    );
+}
+.card2>.container:after{
+    opacity: 0.4 ;
+    background-image: linear-gradient(
+        135deg,
+        #E07E01,
+        #AA2400
+    );
+}
+.card3>.container:after{
+    opacity: 0.4;
+    background-image: linear-gradient(
+        135deg,
+        #AFA89C,
+        #B19A61
+    );
+}
+
+.card4>.container:after{
+    opacity: 0.3;
+    background-image: linear-gradient(
+        135deg,
+        #fffaf1,
+        #d4d4d4c7
+    );
+}
+
+.card5>.container:after{
+    background-image: linear-gradient(
+        135deg,
+        #0b0b0bfb,
+        #c5c5c598
+    );
+}
+
+.card6>.container:after{
+    opacity: 0.3;
+    background-image: linear-gradient(
+        135deg,
+        #8D8D83,
+        #5E798C
+    );
+}
+
+.card7>.container:after{
+    opacity: 0.4;
+    background-image: linear-gradient(
+        135deg,
+        #ffffff,
+        #000000
+    );
+}
+
+.card8>.container:after{
+    opacity: 0.4;
+    background-image: linear-gradient(
+        135deg,
+        #3C3D37,
+        #708E39
+    );
+}
+
+.card9>.container:after{
+    opacity: 0.3;
+    background-image: linear-gradient(
+        135deg,
+        #76757A,
+        #266C7E
+    );
+}
+
+.card10>.container:after{
+    opacity: 0.2;
+    background-image: linear-gradient(
+        135deg,
+        #49433C,
+        #B2D37B
+    );
+}
+
+.card11>.container:after{
+    opacity: 0.4;
+    background-image: linear-gradient(
+        135deg,
+        #BCD2F7,
+        #090D08
+    );
+}
+
+.details{
+    padding: 20px 10px;
+}
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+.details>h1{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    transition: 0.2s all ease-in-out;
+}
+
+.details>h1:hover{
+    transform: scale(1.1);
+}
+
+.details>p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.back-button a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #222327;
+    background-color: #ffffff;
+    padding: 7px 17px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.back-button a:hover {
+    background-color: #f0f0f0;
+}
